@@ -127,7 +127,7 @@ const PROJECTS = [
   {
     title: "Portfolio",
     desc: "My modern portfolio built with React + Tailwind.",
-    link: "https://github.com/portfolio",
+    link: "https://github.com/smdev9273/portfolio",
   },
   {
     title: "APPex",
@@ -137,7 +137,7 @@ const PROJECTS = [
   {
     title: "SamuraiCats",
     desc: "NFT art project called Samurai Cats - created website, NFT smart contract and Metaverse platform",
-    link: "https://github.com",
+    link: "https://samuraicats.io",
   },
 ]
 

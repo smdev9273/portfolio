@@ -240,7 +240,8 @@ export default function App() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/sm_resume.pdf"
+                target="_blank"
                 className="px-5 py-3 rounded-2xl border border-gray-300 dark:border-white/10 hover:border-blue-500 hover:text-blue-500 transition"
               >
                 Download CV

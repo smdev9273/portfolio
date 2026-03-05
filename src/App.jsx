@@ -10,50 +10,81 @@ const fadeUp = {
 const FIRST_NAME = "Sergii";
 const LAST_NAME = "Minchuk";
 const TITLE1 = "Senior Web Developer";
-const TITLE2 = "Blockchain / Web3 Engineer";
+const TITLE2 = "AI Automation";
 const LOCATION = "Pidvolochysk, Ternopil, Ukraine"
-const ABOUT = `Senior Web Developer with <b>8+ years of experience</b> building modern, scalable and high-performance web applications and Web3/blockchain-based platforms.<br/>
-                Strong background in frontend and backend development, smart contract development and integration, decentralized applications (dApps), and performance optimization.<br/>
-                Skilled in modern frameworks, cloud deployment, and secure blockchain development.`
+const ABOUT = `Senior Web Developer with <b>10+ years of experience</b> building modern, scalable and high-performance web applications and Web3/blockchain-based platforms integrated with AI/LLM services.<br/>
+                ✅ Strong background in frontend and backend development, smart contract development and integration, decentralized applications (dApps), and performance optimization.<br/>
+                ✅ Skilled in modern frameworks, cloud deployment, and secure blockchain development.<br>
+                ✅ Built and deployed multiple production-grade applications integrated with modern AI/LLM services.`
 const EMAIL_ADDR = "smdev9273@gmail.com";
 const LINKEDIN_URL = "https://linkedin.com/in/smdev9273";
 const GITHUB_URL = "https://github.com/smdev9273";
 const EXPERIENCES = [
   {
-    title: "Full Stack Web Developer",
-    company: "Advanced Practice Provider Executives, Inc. (APPex)",
-    date: "May 2017 - Dec 2025",
+    title: "💼 Senior Web Developer",
+    company: "🏢 Preceptor Training & Certification",
+    contract_type: "Part-time",
+    date: "Sep 2020 - Present",
     description: [
+      "Architected and developed scalable SaaS platforms using React, Next.js, and Node.js.",
+      "Integrated OpenAI GPT APIs to build AI-powered chatbot systems using Python and FastAPI.",
+      "Reduced API response time by 35% via optimized backend architecture and caching strategies.",
+      "Implemented secure authentication (JWT, OAuth).",
+    ]
+  },
+  {
+    title: "💼 Senior Web Developer",
+    company: "🏢 Advanced Practice Provider Executives, Inc. (APPex)",
+    contract_type: "Full-time",
+    date: "Jan 2023 - Dec 2025",
+    description: [
+      "Lead the web development team.",
       "Built scalable Wordpress websites used by 200k+ users.",
-      "Designed REST APIs with PHP and MySQL.",
       "Created custom Wordpress plugins",
+      "Designed REST APIs with Laravel, PHP and MySQL.",
       "Integrated with various of Third-party services such as SurveyMonkey, ProtorFree and so on.",
       "Improved system performance by 40% via caching & optimization.",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company: "Expensify",
+    title: "💼 Full Stack Developer",
+    company: "🏢 Expensify",
+    contract_type: "Part-time",
     date: "May 2022 - Dec 2022",
     description: [
       "Updated a mobile application with React Native.",
-      "Fixed the bugs in PHP Backend & REST APIs.",
+      "Fixed the bugs in Laravel Backend & REST APIs.",
       "Implemented CI/CD pipelines for automated deployments.",
     ],
   },
   {
-    title: "Blockchain/Web3 Developer",
-    company: "Samurai Cats by Hiro Ando",
-    date: "Jun 2019 - Feb 2022",
+    title: "💼 Web Developer",
+    company: "🏢 Advanced Practice Provider Executives, Inc. (APPex)",
+    contract_type: "Part-time",
+    date: "May 2017 - Dec 2022",
     description: [
-      "Created the smart contract for NFT and deployed on Ethereum network",
-      "Listed in Opensea",
-      "Built the NFT website with Metaverse",
+      "Built official Wordpress website focused on leadership, administration, and executive support for advanced practice providers.",
+      "Created custom Wordpress plugins.",
+      "Integrated with various of Third-party services such as SurveyMonkey, ProtorFree and so on.",
+      "Improved system performance via caching & optimization.",
     ],
   },
   {
-    title: "Web Developer",
-    company: "Web Development Studio",
+    title: "💼 Blockchain/Web3 Developer",
+    company: "🏢 Samurai Cats by Hiro Ando",
+    contract_type: "Contract",
+    date: "Jun 2019 - Feb 2022",
+    description: [
+      "Created the random 4747 NFT Arts.",
+      "Created the smart contract for NFT and deployed on Ethereum network.",
+      "Listed in Opensea.",
+      "Built the NFT website with using Web3.js, Next.js, Three.js and TailwindCSS focused on Metaverse.",
+    ],
+  },
+  {
+    title: "💼 Web Developer",
+    company: "🏢 Web Development Studio",
+    contract_type: "Full-time",
     date: "Jan 2015 - May 2018",
     description: [
       "Developed SaaS platform with React + Node.js.",
@@ -80,9 +111,19 @@ const SKILLS = [
     items: [
       "Node.js, Express.js, NestJS",
       "PHP, Laravel, Wordpress",
-      "Python (FastAPI / Django) (optional)",
+      "Python (FastAPI / Django)",
       "REST APIs, GraphQL",
       "Microservices Architecture",
+    ]
+  },
+  {
+    title: "AI Automation",
+    items: [
+      "AI Workflow Automation",
+      "LLM & AI Integration",
+      "Data Processing & Pipeline Design",
+      "Process & Productivity Automation",
+      "AI-Powered Tools Development",
     ]
   },
   {
@@ -411,8 +452,9 @@ export default function App() {
                     </span>
                   </div>
 
-                  <p className="mt-1 text-blue-500 font-medium">
-                    {job.company}
+                  <p>
+                    <span className="mt-1 text-blue-500 font-medium">{job.company}</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">{` · ${job.contract_type}`}</span>
                   </p>
 
                   <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
